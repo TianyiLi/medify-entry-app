@@ -156,10 +156,10 @@ body {
   color: #fff;
 
   background-size: 120%;
-  background-image: url('/public/assets/bg.svg');
+  background-image: url('/assets/bg.svg');
 
   @include displayUnder1440p() {
-    background-image: url('/public/assets/bg-mbl.svg');
+    background-image: url('/assets/bg-mbl.svg');
     background-size: cover;
   }
 
