@@ -17,6 +17,7 @@ const createAtags = (label: string, attrs: Record<string, any>) => {
   a.title = label;
   return a;
 };
+
 function updateBtnGroups(config: IRoutes) {
   const groups = document.querySelector('#btn-group');
   if (groups) {
@@ -29,4 +30,5 @@ function updateBtnGroups(config: IRoutes) {
   }
   document.querySelector('.title')!.textContent = config.title;
   document.querySelector('.sub-title')!.textContent = config.subTitle;
+  document.querySelector('#head > img')!.src = config.logoLink;
 }
