@@ -145,8 +145,8 @@ body {
   user-select: none;
 }
 
-@mixin displayUnder1440p {
-  @media screen and (max-width: 1440px) {
+@mixin displayUnder1200p {
+  @media screen and (max-width: 1200px) {
     @content;
   }
 }
@@ -158,7 +158,7 @@ body {
   background-size: 120%;
   background-image: url('/assets/bg.svg');
 
-  @include displayUnder1440p() {
+  @include displayUnder1200p() {
     background-image: url('/assets/bg-mbl.svg');
     background-size: cover;
   }
@@ -174,7 +174,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 76px;
-  @include displayUnder1440p() {
+  @include displayUnder1200p() {
     padding-bottom: 50px;
   }
 }
@@ -197,7 +197,7 @@ body {
     height: 100%;
   }
 
-  @include displayUnder1440p {
+  @include displayUnder1200p {
     margin-top: 99px;
     width: 121px;
     height: 121px;
@@ -208,7 +208,7 @@ section {
 
   margin-top: 16px;
 
-  @include displayUnder1440p {
+  @include displayUnder1200p {
     margin-top: 17px;
   }
 
@@ -234,7 +234,7 @@ section {
   gap: 12px;
   margin-top: 33px;
 
-  @include displayUnder1440p() {
+  @include displayUnder1200p() {
     margin-top: 24px;
   }
 }
@@ -252,7 +252,7 @@ section {
 
   width: 466px;
 
-  @include displayUnder1440p() {
+  @include displayUnder1200p() {
     width: calc(100vw - 68px);
     max-width: 346;
   }
@@ -275,7 +275,7 @@ section {
       padding: 8px;
       background: url(./assets/icon-launch.svg) no-repeat;
 
-      @include displayUnder1440p() {
+      @include displayUnder1200p() {
         background: url(./assets/icon-launch.svg) white no-repeat center center;
       }
 
@@ -292,7 +292,7 @@ section {
   width: 100%;
   font-size: 12px;
   padding-bottom: 51px;
-  @include displayUnder1440p() {
+  @include displayUnder1200p() {
     padding-bottom: 25px;
   }
   text-align: center;
